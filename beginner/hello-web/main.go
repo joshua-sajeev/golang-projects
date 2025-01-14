@@ -8,7 +8,7 @@ import (
 
 func main() {
 	// Handle requests to "/"
-	http.HandleFunc("/", HelloServer)
+	http.HandleFunc("POST /", HelloServer)
 
 	// Log that the server is running
 	log.Println("Server is running at http://localhost:8080")
