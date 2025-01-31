@@ -15,6 +15,12 @@ This is a Go-based web application that connects to a MySQL database and serves 
 
 The application uses environment variables for configuration. You can define these variables in a `.env` file for simplicity.
 
+### Generate OpenSSL Cert
+
+openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -nodes
+
+```
+```
 ### Environment Variables
 
 | Variable    | Default Value     | Description                        |
